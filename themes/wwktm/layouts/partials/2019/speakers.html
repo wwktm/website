@@ -1,0 +1,20 @@
+<div class="columns is-multiline">
+    {{ range where .Site.RegularPages "Type" "2019"}}
+    <!--<h1> {{ (len .Pages) }} </h1>-->
+    <!--{{ if (eq (mod (len .Pages) 3) 1) }}-->
+    <!--<h1> YES </h1>-->
+    <!--{{ end }}-->
+
+    <div class="column is-4 speaker">
+            
+        <a href="{{.Permalink}}">
+            <div class="speakerimg">
+                <img class="card-img-top" src="{{.Params.img}}" alt="{{ .Title }}">
+            </div>
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Params.topic }}</p>
+        </a>
+    </div>
+
+    {{ end }}
+</div>

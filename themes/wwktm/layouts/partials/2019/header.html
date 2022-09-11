@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{.Title}} : Web Weekend Kathmandu 2019</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ .Params.desc }}" />
+    <meta name="keywords" content="{{ .Params.keywords }}" />
+    <meta property="image" content="{{ .Params.image }}" />
+
+    <meta property="og:url" content="{{ .Site.BaseURL }}{{ .RelPermalink }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{.Title }} : Web Weekend Kathmandu" />
+    <meta property="og:description" content="{{ .Params.desc }}" />
+    <meta property="og:image" content="{{ .Params.image }}" />
+
+    <meta name="twitter:title" content="{{.Title }} : Web Weekend Kathmandu" />
+    <meta name="twitter:description" content="{{ .Params.desc }}" />
+    <meta name="twitter:image" content="{{ .Params.image }}" />
+    <meta name="twitter:card" content="summary" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    
+    <script defer type="text/javascript" src="/js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/css/bulma-extensions.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/style.css"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-120516157-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-120516157-2");
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '219146428492794');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=219146428492794&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+ <body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="display:block">
+      <div class="alert alert-secondary" role="alert" align="center">
+        Web Weekend Kathmandu 2020 is postponed <a href="https://blog.wwktm.co/updates-on-wwktm-2020/" class="alert-link">Read the Blog</a>.
+      </div>
+      <hr style="margin-top:10px;"/>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="https://2019.wwktm.co"><img src="/img-2019/logo.png"></a>
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="menu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="/2018/">2018</a>
+            <a class="navbar-item" href="/2019/schedule/">Schedule</a>
+            <a class="navbar-item" href="/2019/#speakers">Speakers</a>
+            <a class="navbar-item" href="/2019/faq/">FAQ</a>
+            <a class="navbar-item" href="http://blog.wwktm.co">Blog</a>
+            <a class="navbar-item yo" href="/2019/buy/">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper-body">
