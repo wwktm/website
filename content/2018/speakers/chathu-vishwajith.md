@@ -9,7 +9,7 @@ github : "https://github.com/iamchathu"
 website : "https://chathu.me"
 from : "sri-lanka"
 layout : "speakers"
-img : "/img-2018/chatu.jpeg"
+img : "/img-2018/speakers/chatu.jpeg"
 
 about : "I'm a Co-Founder of a Startup where few of its products are powered by Full-stack JS. I'm an Auth0 Ambassador, Co-Organizer of Colombo JS Meetup and Organizer of Sri Lanka Unity Developers User Group. I have started working with NodeJS since 2012 and I love it. I Co-founded Colombo JS Meetup in 2013 and keep educating and having discussions about JS for almost four years now. Currently working on Full-stack POS app which has NodeJS backend to serve API and React Dashboard, Electron Desktop app with React Native Mobile app."
 ---

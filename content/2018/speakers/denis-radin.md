@@ -9,7 +9,7 @@ github : "https://github.com/PixelsCommander"
 website : "http://pixelscommander.com"
 from : "netherlands"
 layout : "speakers"
-img : "/img-2018/denis-radin.jpeg"
+img : "/img-2018/speakers/denis-radin.jpeg"
 
 about: "JavaScript engineer working on photorealistic 3d games at Evolution Gaming. Passionate about performance optimization and code aesthetics, mastering workshop http://challengingnative.com, hosting http://react.asmterdam , http://amsterdamjs.com"
 ---

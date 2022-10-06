@@ -9,7 +9,7 @@ github : "https://github.com/gkcs"
 website : "http://gkcs.tech"
 layout : "speakers"
 from : "india"
-img: "/img-2018/gaurav-sen.jpeg"
+img: "/img-2018/speakers/gaurav-sen.jpeg"
 
 about : "Gaurav is passionate about designing fault tolerant systems! It requires a lot of thought and makes us learn different concepts in the process. We grow every time we solve challenging problems, and these concepts help us understand the workings of a product from the technical side.
 

@@ -9,7 +9,7 @@ date: 2018-07-16T22:49:37+05:45
 #website : ""
 from : "nepal"
 layout : "speakers"
-img : "/img-2018/sonika.jpg"
+img : "/img-2018/speakers/sonika.jpg"
 
 about: "Sonika is a Computer Engineer, working as a software project manager, After spending nearly 8 years in software engineering and project management, Sonika knows the true value that technology can add in to the day to day lives and how it impacts in the lives of people. She has founded a non-profit where she have dedicated 5 years to empower people with disabilities through technology. 
 

@@ -9,7 +9,7 @@ github : "https://github.com/tchaudhry91"
 # website : ""
 from : "india"
 layout : "speakers"
-img : "/img-2018/tanmaya.jpg"
+img : "/img-2018/speakers/tanmaya.jpg"
 
 about : "Nerd. I like computers, games, pop culture and everything else nerdy. I'm working as a Site Reliability Engineer at Adobe. I spend most of my time staring at terminals and writing some Python/Go. I'm no expert but I like to enthuse about containers, orchestration, the internet, home-labs..what have you."
 ---

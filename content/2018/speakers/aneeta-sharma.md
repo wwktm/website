@@ -9,7 +9,7 @@ github : "https://github.com/anaida07"
 # website : "http://arunmichaeldsouza.com/"
 layout : "speakers"
 from : "nepal"
-img: "/img-2018/aneeta-sharma.jpeg"
+img: "/img-2018/speakers/aneeta-sharma.jpeg"
 
 about : "Aneeta Sharma is a software engineer from Kathmandu, Nepal who has been in the tech industry for more than eight years. She started her career as a Web Designer, before becoming a PHP Developer and then a Ruby on Rails engineer. She has been working on both frontend and backend aspects of web application development since she started her career and has been developing web applications professionally since 2009.
 

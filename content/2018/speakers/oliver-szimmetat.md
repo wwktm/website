@@ -9,7 +9,7 @@ date: "2018-07-16T22:49:37+05:45"
 website : "https://www.linkedin.com/in/oliversz/"
 layout: "speakers"
 from: "united-states"
-img: "/img-2018/oliversz.jpeg"
+img: "/img-2018/speakers/oliversz.jpeg"
 
 about: "Born and raised in Hamburg, Germany, Oliver currently lives in Seattle, Washington, USA, where he just joined UBER as a Cloud Security Engineering Manager.
 

@@ -9,7 +9,7 @@ github : "https://github.com/akashadhikari/"
 website : "http://akashadhikari.com.np/"
 layout : "speakers"
 from : "nepal"
-img: "/img-2018/aakash-adhikari.jpeg"
+img: "/img-2018/speakers/aakash-adhikari.jpeg"
 
 about : "Akash has been developing web applications and providing hands-on Python trainings to numerous young programming enthusiasts. He is currently undertaking a research based project for Kathmandu Valley’s Air Pollution analysis using deep learning methods. In the web, he likes to work with Python and Django in particular. He is a Computer Engineer from Nepal and a young researcher in the field of deep learning who has been trying to explore the infinite depths of AI. He is not an expert but a constantly hungry learner and he hopes to be so for the rest of his life."
 ---

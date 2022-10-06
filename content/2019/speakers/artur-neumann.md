@@ -1,7 +1,7 @@
 ---
 title: "Artur Neumann"
 aliases:
-    - /speakers/artur-neumann/
+    - /2019/speakers/artur-neumann/
 topic : "How to change your manual testing time into chiya drinking time"
 date: "2019-09-01T10:02:49Z"
 layout : "speakers"

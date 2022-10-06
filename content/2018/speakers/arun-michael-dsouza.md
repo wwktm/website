@@ -9,7 +9,7 @@ github : "https://github.com/ArunMichaelDsouza"
 website : "http://arunmichaeldsouza.com/"
 layout : "speakers"
 from : "india"
-img: "/img-2018/arun-michael-dsouza.png"
+img: "/img-2018/speakers/arun-michael-dsouza.png"
 
 about : "Arun is a Technology Enthusiast and Speaker from New Delhi, India currently working with AdPushup Inc. on various Ad-Tech focused Technologies and Products. He wrote his first large-scale ERP Application while he was still in High School. Since then he has been an avid Technologist, specializing in the Web. He is an Open Source Software Author and Contributor and has released several utilities and libraries for React, Angular, Node, Sass/CSS etc. Apart from dabbling with Technology he enjoys playing Video Games, listening to Rock Music and Travelling."
 ---
