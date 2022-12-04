@@ -1,0 +1,14 @@
+
+{{ define "main"}}
+{{ partial "2020/common/head.html" . }}
+<link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/2023/css/call-for-speakers.css">
+
+{{ partial "2020/navigation/navigation.html" .}}
+
+{{.Content}}
+
+{{end}}

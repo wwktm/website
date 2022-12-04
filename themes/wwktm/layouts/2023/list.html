@@ -1,0 +1,45 @@
+
+{{ define "main"}}
+{{ partial "2020/common/head.html" . }}
+
+{{ partial "2020/navigation/navigation.html" .}}
+<style>
+  .art-holder {
+    position: relative;
+  }
+  .release-date{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  #cfpButton {
+    margin-top: 16px
+  }
+
+  @media only screen and (max-width: 600px) {
+    .release-date {
+      position: relative;
+    }
+  
+  }
+</style>
+
+<section>
+  <div class="art-holder">
+    {{ partial "wwktm-art/index.html" . }}
+    <div class="release-date">
+      
+      <a class="btn btn-orange" id="cfpButton" href="https://blog.wwktm.co/updates-on-wwktm-2020/" > Read our Blog </a>
+    </div>
+
+
+   
+  </div>
+</section>
+
+<!-- credits -->
+{{ partial "wwktm-art/credit.html" . }}
+
+{{ partial "2020/common/foot.html" . }}
+{{end}}
