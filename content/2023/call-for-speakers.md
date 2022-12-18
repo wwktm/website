@@ -5,18 +5,15 @@ layout: call-for-speakers
 <div class="wrap">
   <h1> Call for Speakers </h1>
   <p class="font-weight-bold"> OPEN UNTIL April 21 2023 </p>
-  <p class="lead"> We invite everyone working on internet applications and infrastructure to submit talks for wwktm
-    2019.</p>
+  <p class="lead"> We invite everyone working on internet applications and/or infrastructure to submit talks for Web Weekend Kathmandu 2023.</p>
   <a href="https://forms.gle/xoW47TF9S4d3ijki6" target="_blank"><button class="btn btn-orange"> Submit a Proposal </button></a>
 </div>
 <div class="topic-block common-padding alt">
   <h2><span class="break"> Interesting </span> Topics </h2>
   <div class="row">
     <div class="col-xl-8">
-      <p>Web Weekend Kathmandu was started with the motive to connect the tech community in Kathmandu and create a
-        bridge with the international community. <a href="/2018/schedule/">Talks from 2018 </a> and <a href="/2019/schedule/">2019 </a>should
-        give you an idea of the broad range of talks we're interested in. We would like to see anything that fits
-        in the spectrum of but not limited to:</p>
+      Web Weekend Kathmandu was started with the motive to connect the tech community in Kathmandu and create a bridge with the international community. <a href="/2018/schedule/">Talks from 2018 </a> and <a href="/2019/schedule/">2019 </a> should give you an idea of the broad range of talks we're interested in. Our audience skill level is intermediate to advanced. We would like to see anything that fits in the spectrum of but not limited to:
+      </p>
       <ul>
         <li> Cutting-edge technological advances in the web or computer science in general. It should be related to
           the web somehow.</li>
@@ -35,8 +32,7 @@ layout: call-for-speakers
     </div>
     <!-- /col -->
     <div class="col-xl-4 blue-box">
-      <p> Pick whatever you feel most passionate about. This is your conference! </p>
-      <h4>Remember 😛</h4>
+      <p>Pick whatever you feel most passionate about. This is your conference! </p>
     </div>
     <!-- /col -->
   </div>
@@ -117,7 +113,12 @@ layout: call-for-speakers
   <h2> <span class="break"> Awesome </span> Perks </h2>
   <div class="row">
     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/ticket.svg" class="img-fluid" alt="">
-      <p class="lead"> Event Ticket </p>
+      <p class="lead"> Hotel Accomodation </p>
+      <p>(if you are not from Kathmandu, or need one)</p>
+    </div>
+    <!-- /col -->
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/pass.svg" class="img-fluid" alt="">
+      <p class="lead"> Full access to the conference </p>
     </div>
     <!-- /col -->
     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/pass.svg" class="img-fluid" alt="">
@@ -132,6 +133,11 @@ layout: call-for-speakers
       <p class="lead"> Speakers dinner </p>
     </div>
     <!-- /col -->
+    <!-- /col -->
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/party.svg" class="img-fluid" alt="">
+      <p class="lead"> High quality recording of your talk </p>
+    </div>
+    <!-- /col -->
   </div>
   <!-- /row -->
   <div class="btn-wrap">
@@ -140,14 +146,10 @@ layout: call-for-speakers
 </div>
 <!-- /perks-block -->
 <div class="sponsorship-block common-padding alt">
-  <h2> <span class="break"> Financial Matters </span> Sponsorships </h2>
+  <h2> <span class="break"> Financial Matters </span> Travel Support </h2>
   <p>
-    In 2018, we were not in a position to provide financial support to speakers as it was the first time the
-    community had come together to organize a coference of this scale. This year, we plan to support some speakers
-    upto an amount of US$500 that can account for accomodation or economy flight tickets. We have limited support,
-    so if companies can sponsor employees, do select that option so that someone else can make use of the support.
+    Since we are a community led initiative, we have a limited budget for the conference. We generally request our speakers to arrange flight tickets via the organisations they are involved with. If you are a speaker who would like support with travel, please choose to mention that in the CFP form. In the past, we’ve supported one or two speakers (each year) by providing $500 as travel support.
   </p>
-  <p> We do provide a format for sponsorship letter which can be submitted if someone can sponsor your trip.</p>
 </div>
 <!-- /final -->
 <div class="final-block common-padding">
