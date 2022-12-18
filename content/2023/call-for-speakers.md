@@ -113,8 +113,10 @@ layout: call-for-speakers
   <h2> <span class="break"> Awesome </span> Perks </h2>
   <div class="row">
     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/ticket.svg" class="img-fluid" alt="">
-      <p class="lead"> Hotel Accomodation </p>
-      <p>(if you are not from Kathmandu, or need one)</p>
+      <p class="lead"> Hotel Accomodation 
+        <span class="lead__sub">(if you are not from Kathmandu,<br> or need one)</span><!-- /col -->
+      </p>
+      <!-- /col -->
     </div>
     <!-- /col -->
     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/pass.svg" class="img-fluid" alt="">

@@ -363,8 +363,19 @@
       left: 0;
       bottom: -7px;
   }
+
+  .perks-block .row {
+    justify-content: center;
+  }
+  
   .perks-block .col-xl-3 {
       text-align: center;
+  }
+
+  .perks-block  .lead__sub {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
   }
   .btn-wrap {
       text-align: center;
