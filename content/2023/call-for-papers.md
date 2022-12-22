@@ -1,9 +1,10 @@
 ---
-title: "Call for Speakers"
+title: "Call for Papers"
 layout: call-for-speakers
 ---
+
 <div class="wrap">
-  <h1> Call for Speakers </h1>
+  <h1> Call for Papers </h1>
   <p class="font-weight-bold"> OPEN UNTIL April 21 2023 </p>
   <p class="lead"> We invite everyone working on internet applications and/or infrastructure to submit talks for Web Weekend Kathmandu 2023.</p>
   <a href="https://forms.gle/xoW47TF9S4d3ijki6" target="_blank"><button class="btn btn-orange"> Submit a Proposal </button></a>
@@ -12,7 +13,7 @@ layout: call-for-speakers
   <h2><span class="break"> Interesting </span> Topics </h2>
   <div class="row">
     <div class="col-xl-8">
-      Web Weekend Kathmandu was started with the motive to connect the tech community in Kathmandu and create a bridge with the international community. <a href="/2018/schedule/">Talks from 2018 </a> and <a href="/2019/schedule/">2019 </a> should give you an idea of the broad range of talks we're interested in. Our audience skill level is intermediate to advanced. We would like to see anything that fits in the spectrum of but not limited to:
+      Web Weekend Kathmandu was started with the motive to connect the tech community in Kathmandu and create a bridge with the international community. <a href="/2023/schedule/">Talks from 2018 </a> and <a href="/2019/schedule/">2019 </a> should give you an idea of the broad range of talks we're interested in. Our audience skill level is intermediate to advanced. We would like to see anything that fits in the spectrum of but not limited to:
       </p>
       <ul>
         <li> Cutting-edge technological advances in the web or computer science in general. It should be related to
