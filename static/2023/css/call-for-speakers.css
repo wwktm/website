@@ -58,15 +58,17 @@
   *, *:after, *:before { box-sizing: border-box; }
   .clearfix:before, .clearfix:after {display: table;  content: ''; }
   .clearfix:after { clear: both; }
-  
   body {
     background: #fff;
     color: #1e1a1b;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 18px;
+    line-height: 1.25;
     font-family: 'Raleway', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    max-width: 1200px;
+    margin: auto;
   }
   
   a {
@@ -128,7 +130,7 @@
     font-size: 18px;
     color: #FFF;
     border: none;
-    margin:0px 10px;
+    margin:0;
   }
   .btn-blue{
     background-color: #45bef4;
@@ -262,10 +264,9 @@
       box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
   }
   .lead {
-      color: #000;
-      font-size: 24px;
-      line-height: 36px;
-      font-weight: 300;
+    color: #424242;
+    font-weight: 300;
+    margin-top: 1rem;
   }
   .box h1 {
       color: #45bef4;
@@ -287,16 +288,9 @@
       font-weight: 700;
       margin-bottom: 40px;
   }
-  p {
-      color: #424242;
-      font-weight: 300;
-      font-size: 18px;
-  }
   ul li {
-      color: #424242;
       font-weight: 400;
-      font-size: 16px;
-      padding-bottom: 10px;
+      padding-bottom: .5rem;
   }
   ul {
       margin-left: 0;
@@ -333,7 +327,7 @@
       font-weight: 700;
   }
   .wrap {
-      padding: 0 100px 60px;
+      padding: 100px 60px;
   }
   .common-padding {
       padding: 60px 100px;

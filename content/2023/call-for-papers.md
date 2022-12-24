@@ -3,7 +3,7 @@ title: "Call for Papers"
 layout: call-for-speakers
 ---
 
-<div class="wrap">
+<div class="topic-block common-padding">
   <h1> Call for Papers </h1>
   <p class="font-weight-bold"> OPEN UNTIL April 21 2023 </p>
   <p class="lead"> We invite everyone working on internet applications and/or infrastructure to submit talks for Web Weekend Kathmandu 2023.</p>
@@ -57,11 +57,10 @@ layout: call-for-speakers
 <div class="help-block common-padding alt">
   <h2> <span class="break"> Help </span> Here to Help </h2>
   <div class="row">
-    <div class="col-xl-4"> <img src="/img/thumbs-up.png" class="img-fluid" alt=""> </div>
+    <div class="col-xl-4"> <img src="/2023/img/thumbs-up.png" class="img-fluid" alt=""> </div>
     <div class="col-xl-1"> </div>
     <div class="col-xl-7">
-      <p> We're very happy to see new speakers and would like to support in the process of the delivering an
-        interesting talk.</p>
+      <p> We are always excited to welcome new speakers and are committed to helping them deliver engaging and informative talks. We are here to support you throughout the process. </p>
       <ul>
         <li> We’re happy to brainstorm your interests and seek great hidden ideas.</li>
         <li> We’re happy to connect you with experienced speakers to help you prepare your submission. </li>
@@ -113,31 +112,31 @@ layout: call-for-speakers
 <div class="perks-block common-padding">
   <h2> <span class="break"> Awesome </span> Perks </h2>
   <div class="row">
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/ticket.svg" class="img-fluid" alt="">
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/2023/img/ticket.svg" class="img-fluid" alt="">
       <p class="lead"> Hotel Accomodation 
         <span class="lead__sub">(if you are not from Kathmandu,<br> or need one)</span><!-- /col -->
       </p>
       <!-- /col -->
     </div>
     <!-- /col -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/pass.svg" class="img-fluid" alt="">
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/2023/img/pass.svg" class="img-fluid" alt="">
       <p class="lead"> Full access to the conference </p>
     </div>
     <!-- /col -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/pass.svg" class="img-fluid" alt="">
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/2023/img/pass.svg" class="img-fluid" alt="">
       <p class="lead"> VIP Hospitality </p>
     </div>
     <!-- /col -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/gift.svg" class="img-fluid" alt="">
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/2023/img/gift.svg" class="img-fluid" alt="">
       <p class="lead"> Speaker Kit </p>
     </div>
     <!-- /col -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/party.svg" class="img-fluid" alt="">
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/2023/img/party.svg" class="img-fluid" alt="">
       <p class="lead"> Speakers dinner </p>
     </div>
     <!-- /col -->
     <!-- /col -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/img/party.svg" class="img-fluid" alt="">
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/2023/img/party.svg" class="img-fluid" alt="">
       <p class="lead"> High quality recording of your talk </p>
     </div>
     <!-- /col -->
@@ -151,7 +150,7 @@ layout: call-for-speakers
 <div class="sponsorship-block common-padding alt">
   <h2> <span class="break"> Financial Matters </span> Travel Support </h2>
   <p>
-    Since we are a community led initiative, we have a limited budget for the conference. We generally request our speakers to arrange flight tickets via the organisations they are involved with. If you are a speaker who would like support with travel, please choose to mention that in the CFP form. In the past, we’ve supported one or two speakers (each year) by providing $500 as travel support.
+  As a community-run initiative, our budget for the conference is limited. To help offset the costs of travel, we typically request that speakers arrange their own flights through their respective organizations. However, <strong>we do offer limited travel support to a select few speakers each year, in the form of a $500 allowance.</strong> If you are interested in potentially receiving travel support, please make a note of it in the CFP form.
   </p>
 </div>
 <!-- /final -->
