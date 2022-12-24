@@ -1,0 +1,21 @@
+h1{
+  font-size: 3.2rem;
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  line-height: 130%;
+  margin: 0 !important;
+  color: #262a41;
+}
+.btn {
+  border-radius: 2px;
+  padding: 15px 40px;
+  font-weight: 500;
+}
+.btn-orange {
+  background-color: #ff7d4a;
+  color: white;
+}
+.btn-orange:hover {
+  background-color: #ff4700;
+  color: white;
+}

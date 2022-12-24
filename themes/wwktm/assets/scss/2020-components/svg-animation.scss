@@ -53,27 +53,27 @@
   .Shape1 {
     stroke-dasharray: 3000;
     stroke-dashoffset: -1000;
-    animation: dashbackward 3s ease-out forwards;
+    animation: dashbackward 1s ease-out forwards;
   }
   .Shape2 {
     stroke-dasharray: 3000;
     stroke-dashoffset: 1000;
-    animation: dashforward 3s ease-out forwards;
+    animation: dashforward 1s ease-out forwards;
   }
   .Shape3 {
     stroke-dasharray: 3000;
     stroke-dashoffset: -2000;
-    animation: dashbackward 3s ease-out forwards;
+    animation: dashbackward 2s ease-out forwards;
   }
   .Shape4 {
     stroke-dasharray: 3000;
     stroke-dashoffset: 2000;
-    animation: dashforward 3s ease-out forwards;
+    animation: dashforward 2s ease-out forwards;
   }
   .Shape5 {
     stroke-dasharray: 3000;
     stroke-dashoffset: -3000;
-    animation: dashbackward 3s ease-out forwards;
+    animation: dashbackward 2s ease-out forwards;
   }
   
   @keyframes dashforward {
