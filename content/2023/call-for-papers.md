@@ -13,7 +13,7 @@ layout: call-for-speakers
   <h2><span class="break"> Interesting </span> Topics </h2>
   <div class="row">
     <div class="col-xl-8">
-      Web Weekend Kathmandu was started with the motive to connect the tech community in Kathmandu and create a bridge with the international community. <a href="/2023/schedule/">Talks from 2018 </a> and <a href="/2019/schedule/">2019 </a> should give you an idea of the broad range of talks we're interested in. Our audience skill level is intermediate to advanced. We would like to see anything that fits in the spectrum of but not limited to:
+      Web Weekend Kathmandu was started with the motive to connect the tech community in Kathmandu and create a bridge with the international community. <a href="/2018/schedule/">Talks from 2018 </a> and <a href="/2019/schedule/">2019 </a> should give you an idea of the broad range of talks we're interested in. Our audience skill level is intermediate to advanced. We would like to see anything that fits in the spectrum of but not limited to:
       </p>
       <ul>
         <li> Cutting-edge technological advances in the web or computer science in general. It should be related to
