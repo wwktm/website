@@ -7,7 +7,7 @@ layout: call-for-speakers
   <h1> Call for Papers </h1>
   <p class="font-weight-bold"> OPEN UNTIL April 21 2023 </p>
   <p class="lead"> We invite everyone working on internet applications and/or infrastructure to submit talks for Web Weekend Kathmandu 2023.</p>
-  <a href="https://forms.gle/xoW47TF9S4d3ijki6" target="_blank"><button class="btn btn-orange"> Submit a Proposal </button></a>
+  <a href="https://forms.gle/xoW47TF9S4d3ijki6" target="_blank"><button class="btn btn-orange cfpButton"> Submit a Proposal </button></a>
 </div>
 <div class="topic-block common-padding alt">
   <h2><span class="break"> Interesting </span> Topics </h2>
