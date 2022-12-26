@@ -136,7 +136,7 @@ layout: call-for-speakers
     </div>
     <!-- /col -->
     <!-- /col -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/2023/img/party.svg" class="img-fluid" alt="">
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"> <img src="/2023/img/gala.svg" class="img-fluid" alt="">
       <p class="lead"> High quality recording of your talk </p>
     </div>
     <!-- /col -->
