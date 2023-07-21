@@ -1,92 +1,70 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
 <style>
-  .body {
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-  .main-description {
-    background-color: #ffffff;
-    transform: rotate(0);
-    display: flex;
-    flex-direction: column;
+  .main-description{
+    /* display: flex; */
     justify-content: center;
-    align-items: center;
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 110px 0px 70px 0px;
-    border-radius: 30px;
-    row-gap: 24px,
-
-  }
-
-  p {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 40px;
-    letter-spacing: 0px;
+    padding: 6.8rem 14.375% 4.38rem 14.375%;
     text-align: center;
-    color: #1e2441;
+    /* align-items: center; */
   }
-
-  h3 {
+  .message-title{
     font-family: "Clash Display", sans-serif;
     font-size: 50px;
     font-weight: 600;
     line-height: 66px;
-    letter-spacing: 0em;
-    text-align: center;
+    color:#262A41;
   }
-  .bottom-message {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 32px;
-    letter-spacing: 0px;
+  .messages{
+    font-family: "Monserratt",Arial, Helvetica, sans-serif;
+    color:#1E2441
+  }
+  .top-message{
+    padding:1.5rem 0 1.5rem 0;
+  }
+  .bottom-message{
+    display: flex;
     text-align: left;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: Fill (1,140px);
-    height: 289px;
-    gap: 24px;
-
+    gap: 1.5rem;
   }
-
-  .top-message {
-      width: Fill (1,140px);
-      height:  (64px);
-      padding: 0px 150px 0px 150px;
+  .left-message{
+    width:50%;
   }
   .right-message{
-  width: Fill (558px);
-  height:  (136px);
-  gap: 10px;
-  }
-  .right-message .text{
+    width:50%;
+    border-radius: 1.25rem;
     background-color: #E0F7FF;
-    padding: 20px;
-    border-radius: 20px;
-
-
-
+    height:fit-content;
   }
-  
+ .right-message-text{
+      padding:1.25rem
+    }
+    @media screen and (max-width: 480px) {
+  .bottom-message {
+    flex-direction: column; 
+  }
+  .left-message{
+    width:100%
+  }
+  .right-message{
+    width:100%
+  }
+}
 </style>
 
-  
-  
+</style>
   <div class="main-description">
-    <div class="top-message">
-      <h3>Flagship tech event</h3>
-      <p>
+    <div class="message-title">Flagship tech event</div>
+    <div class="messages">
+      <div class="top-message">
         The legendary SmashingConf SF 🇺🇸 is back — entirely focused on
         cutting-edge front-end. From<br />
         accessibility and advanced CSS to JavaScript gems and web performance.
-      </p>
+
     </div>
     <div class="bottom-message">
-      <div class="left-text">
+      <div class="left-message">
         SmashingConf are friendly, inclusive events with 2 days, 1 track, 12
         speakers, 250–400 attendees and one or two days of hands-on workshops. Our
         speakers are great: they are absolute experts in their field, show how
@@ -96,9 +74,13 @@
         something from every talk, with actionable insights for your work.
       </div>
       <div class="right-message">
-        <div class="text">Excited to join, but your manager needs a little more persuasion? Check
-          <u>Convince Your Boss</u> PDF and a <u>Letter For The Boss</u>. Good luck! 🤞🤞🏼🤞🏾</div>
+        <div class="right-message-text">
+       Excited to join, but your manager needs a little more persuasion? Check
+       <u>Convince Your Boss</u> PDF and a <u>Letter For The Boss</u>. Good luck! 🤞🤞🏼🤞🏾</div>
       </div>
+      </div>
+
     </div>
+    
   </div>
   
