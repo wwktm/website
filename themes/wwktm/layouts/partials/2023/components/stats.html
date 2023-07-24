@@ -1,8 +1,8 @@
 <style>
   .stats-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 12.5vw);
+    grid-template-columns: repeat(8, 12.5vw);
+    grid-auto-rows: 12.5vw;
     position: absolute;
     left: 0;
     right: 0;
@@ -34,7 +34,7 @@
   .gird-span-3 {
     grid-column: span 3;
   }
-  main > div {
+  .stats-container > div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,10 +53,11 @@
     line-height: 36px;
     letter-spacing: 2px;
   }
-  p {
+  .stats-container > div > p {
     text-align: center;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 </style>
 <main class="stats-container">
