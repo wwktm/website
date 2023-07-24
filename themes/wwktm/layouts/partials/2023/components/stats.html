@@ -1,0 +1,119 @@
+<style>
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 12.5vw);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .bg-orange {
+    background: #ec7b53;
+  }
+
+  .bg-blue {
+    background: #57c2f1;
+  }
+
+  .bg-light-blue {
+    background: #eef8fd;
+  }
+
+  .bg-white {
+    background: white;
+  }
+
+  .gird-col-span-2 {
+    grid-column: span 2;
+  }
+  .gird-row-span-2 {
+    grid-row: span 2;
+  }
+
+  .gird-span-3 {
+    grid-column: span 3;
+  }
+  main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .numbers {
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+
+  .text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 2px;
+  }
+  p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+<main class="stats-container">
+  <div class="bg-white gird-span-3"></div>
+  <div class="bg-orange">
+    <p>
+      <span class="numbers"> 10 </span>
+      <span class="text">SPEAKERS </span>
+    </p>
+  </div>
+  <div class="bg-white"></div>
+  <div class="bg-light-blue"></div>
+  <div class="bg-white gird-col-span-2"></div>
+  <div class="bg-light-blue"></div>
+  <div class="bg-blue gird-col-span-2 gird-row-span-2">
+    <p>
+      <span class="numbers">300+</span>
+      <span class="text">ATTENDIES</span>
+    </p>
+  </div>
+  <div class="bg-white"></div>
+  <div class="bg-blue">
+    <p>
+      <span class="numbers">14</span>
+      <span class="text">COUNTRIES</span>
+    </p>
+  </div>
+  <div class="bg-white gird-col-span-2"></div>
+  <div class="bg-orange">
+    <p>
+      <span class="numbers">2018</span>
+      <span class="text">NUMBERS</span>
+    </p>
+  </div>
+  <div class="bg-white"></div>
+  <div class="bg-orange">
+    <p>
+      <span class="numbers">55+</span>
+      <span class="text">COMPANIES</span>
+    </p>
+  </div>
+  <div class="bg-white"></div>
+  <div class="bg-orange gird-col-span-2 gird-row-span-2">
+    <p>
+      <span class="numbers">1,731,840</span>
+      <span class="text">STEPS HIKED</span>
+    </p>
+  </div>
+  <div class="bg-white"></div>
+  <div class="bg-blue">
+    <p>
+      <span class="numbers">14</span>
+      <span class="text">COUNTRIES</span>
+    </p>
+  </div>
+  <div class="bg-white"></div>
+  <div class="bg-light-blue"></div>
+  <div class="bg-white gird-col-span-2"></div>
+  <div class="bg-light-blue"></div>
+</main>
