@@ -1,0 +1,233 @@
+<style>
+    body{
+        box-sizing: border-box;
+        margin:0;
+    }
+    .header{
+        width:100%;
+        position: relative;
+        /* height:100%; */
+        /* height: fit-content; */
+        align-items: center;
+        display: flex;
+    }
+    .banner-video{
+        width:100%;
+       
+        z-index:  1;
+    }
+    .banner-text{
+    position: absolute;
+    padding-left: 6.8rem;
+    z-index: 2;
+    }
+    .banner-text .title{
+        font-family: "Clash Display";
+        font-size: 5.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 5.5rem; 
+        color: #FFF;
+    }
+    .date{
+        color:#57C2F1;
+        font-family: "Montserrat";
+        font-size: 1.3125rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem; 
+    }
+    .buttons{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    #buy-now{
+       
+        padding: 1.25rem 3.375rem;
+      
+        /* gap: 0.625rem; */
+        border-radius: 3.125rem;
+        border: 0px solid var(--white, #FFF);
+        background: var(--white, #FFF);
+        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.11);
+
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+    #learn-more{
+        color: #FFF;
+        font-family: "Montserrat";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.75rem;
+        padding-left:1rem
+    }
+    /* .marquee{
+        animation: marquee 15s linear 0s infinite;
+        font-family: "Clash Display";
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.375rem;
+        color: #000;
+        text-align: center;
+
+        display: flex;
+        width:fit-content;
+        height: 5rem;
+        transform-origin: left;
+        transform: rotate(-2deg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        background-color: #57C2F1;
+        position: absolute;
+        white-space: pre;
+        overflow-x: hidden;
+        width: fit-content;
+    } */
+    .marquee {
+      font-family: "Clash Display";
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.375rem;
+        color: #000;
+        white-space: pre;
+        transform-origin: left;
+        transform: rotate(-2deg);
+        position: absolute;
+        z-index: 2;
+        background-color: #57C2F1;
+        width:100%;
+
+
+
+  --gap: 7rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  
+}
+
+
+.marquee__content {
+    animation: scroll 29s linear infinite;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+}
+.marquee li{
+  list-style-type: none;
+
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .banner-text {
+      padding-left: 1rem; /* Adjust as needed for smaller screens */
+      font-size: 2rem; /* Adjust font size for smaller screens */
+
+    }
+    .marquee {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      --gap: 3rem; /* Adjust gap between list items */
+    }
+  }
+ 
+</style>
+
+<div class = "header">
+    <video autoplay class="banner-video"  loop controls>
+        <source src="D:/College Files/Major Project/Streaming/1.mp4"type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      
+      <div class="banner-text">
+        <div class="date">
+            September 23-24, 2023 in Kathmandu
+        </div>
+        <div class="title">
+            Bringing Together</br> The Web Community
+        </div>
+        <div class="buttons">
+            <button id="buy-now">
+                Buy now
+              </button>
+              <div id="learn-more">
+                Learn More
+              </div>
+          </div>        
+        </div>
+</div>
+<div class="marquee">
+    <ul class="marquee__content">
+      <li>Cutting-edge technological</li>
+      <li>/</li>
+      <li>Peer to Peer web3</li>
+      <li>/</li>
+      <li>Nepalese Tech Companies</li>
+      <li>/</li>
+      <li>Nepalese Tech Companies</li>
+      <li>/</li>
+      <li>Technology for social good</li>
+    </ul>
+    <!-- Mirrors the content above -->
+    <ul class="marquee__content" aria-hidden="true">
+        <li>Cutting-edge technological</li>
+        <li>/</li>
+        <li>Peer to Peer web3</li>
+        <li>/</li>
+        <li>Nepalese Tech Companies</li>
+        <li>/</li>
+        <li>Nepalese Tech Companies</li>
+        <li>/</li>
+        <li>Technology for social good</li>
+    </ul>
+  </div>
+<script>
+function animate(element) {
+    let elementWidth = element.offsetWidth;
+    let parentWidth = element.parentElement.offsetWidth;
+    let flag = 0;
+  let c = 0
+  console.log(element.innerHTML)
+    setInterval(() => {
+        element.style.marginLeft = --flag + "px";
+        let contentArray = element.innerHTML.split('/')
+        console.log((Math.abs(flag)%((1/contentArray.length)*parentWidth)))
+        if(Math.floor(Math.abs(flag)%((1/contentArray.length)*parentWidth))===0){
+            const firstVal = contentArray.shift();
+            contentArray.push(firstVal)
+            console.log("setting values to ",contentArray)
+
+            element.innerHTML = contentArray.join("/")
+        }
+  
+        if (elementWidth == -flag) {
+            flag = parentWidth;
+        }
+    }, 10);
+}
+// animate(document.getElementById("marquee"))
+</script>
