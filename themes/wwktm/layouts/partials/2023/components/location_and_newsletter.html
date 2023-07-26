@@ -1,0 +1,93 @@
+<style>
+    .venue-block{
+      text-align: center;
+      /* bottom: 10px; */
+      /* width: 100%; */
+      background-color: #57C2F1;
+      /* background: url(../img-2019/rounded.jpg) 0 0 !important; */
+      color: white;
+    }
+
+    .newsletter-section .container {
+        /* max-width: 1140px; */
+        text-align: center;
+        max-height: 202px;
+        min-height: 202px;
+        /* FIXME: use media as background (export from FIGMA?) */
+        background-color: #181B23;
+        border-radius: 8px;
+        color: white;
+    }
+    .newsletter-section p {
+        color: #fff;
+        margin-bottom: 40px;
+        padding: 0 80px;
+    }
+    .newsletter-section .btn-primary {
+        border-radius: 0;
+        padding: 10px 40px;
+        border: 1px solid #fff;
+        background-color: #57C2F1;
+        font-family: 'Montserrat';
+        font-weight: 700;
+    }
+    .newsletter-section input[type="email"] {
+        border-radius: 0;
+        padding: 10px 10px;
+        margin-right: 10px;
+        background-color: transparent;
+        color: white;
+        height: 44px;
+        /* border: 1px solid #fff; */
+        /* background-color: #fff; */
+        /* color: #000; */
+        font-size: 1.1rem;
+        box-shadow: none;
+        min-width: 300px;
+        max-width: 300px;
+        border: 0;
+        border-bottom: 1px solid white;
+    }
+    .newsletter-section .btn-primary:hover {
+        background-color: #2dabe3;
+        border: 1px solid #45bef4;
+    }
+  </style>
+
+<section class="section is-medium content venue-block">
+    <div class="container">
+        <h2 style="font-size:50px; font-family: 'ClashDisplay-Semibold'; padding-top: 70px; margin-bottom:24px">Location</h2>
+        <div style="max-width: 840px; font-family: 'Montserrat'; margin:auto; margin-top: 24px; margin-bottom:24px;" class="subtitle">Located in the heart of the city, Alice Receptions is the perfect location to conduct our conference</div>
+        <div class="row" style="padding-bottom:170px;">
+            <div class="col-md-6 a maps-embed">
+            <iframe style="width:530px; height:300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.9199009527833!2d85.32655997640488!3d27.71975927617547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1984cdc3bb3b%3A0xca116e9047626ba8!2sALICE%20Receptions!5e0!3m2!1sen!2snp!4v1689753383030!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6 b venue-image">
+                <!-- FIXME: probably want to reduce the size of the image below venue_alice.jpeg -->
+                <img src="/2023/img/venue_alice.jpeg" style="width:530px; height:300px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-medium content newsletter-section">
+    <div class="container">
+        <div id="newsletter">
+            <h4 class="small-title" style="padding-top: 50px; margin: -90px 40px 20px 40px; font-size:28px; font-family: 'ClashDisplay-Semibold'; ">Subscribe to our newsletter</h4>
+            <h2 class="main-title"></h2>
+            <!-- <p class="lead">Join our subscribers list to get the latest news, updates and special offers delivered directly in your inbox.</p> -->
+            <!-- FIXME: make sure this is the newsletter link and see how to pass name (to make the exact UI which is in Figma, with name too) -->
+            <form action="https://wwktm.us7.list-manage.com/subscribe/post?u=86f98e6984113b750376bd471&amp;id=5ccc30611a" method="post" target="_blank">
+              <div class="input-group" style="margin: auto">
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_86f98e6984113b750376bd471_5ccc30611a" tabindex="-1" value="">
+                </div>
+                <div style="position: relative; margin:auto; display:flex;">
+                    <input type="email" class="form-control" placeholder="Enter your email" required="" name="EMAIL">
+                    <input type="submit" class="btn btn-primary" value="Subscribe Now" name="subscribe">
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+</section>

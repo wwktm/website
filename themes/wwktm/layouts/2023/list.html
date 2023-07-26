@@ -1,2 +1,34 @@
+
+{{ partial "2023/common/head.html" . }} {{ partial "2023/navigation/navigation.html" .}}
+<style>
+    .container {
+      max-width:1140px
+    }
+    div.subtitle {
+      /* max-width: 840px; */
+      size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+    div.subtitle strong {
+      color: #ff7d4a;
+    }
+    /* @media only screen and (max-width: 600px) {
+      .release-date {
+        position: relative;
+      }
+    } */
+
+    .wrapper-body {
+        padding: 5rem 0 0 0;
+    }
+  </style>
 {{partial "2023/components/banner.html" }}
 {{partial "2023/components/intro.html" }}
+<div class="wrapper-body">
+    
+    {{ partial "2023/components/tickets.html" . }}
+    {{ partial "2023/components/location_and_newsletter.html" . }}
+</div>
+
+<!-- credits -->
+{{ partial "2023/common/foot.html" . }}
