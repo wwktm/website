@@ -1,0 +1,232 @@
+<style>
+  .speaker-container {
+    display: flex;
+    padding: 33px 0px;
+    gap: 24px;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .heading {
+    font-family: "clash-display";
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 66px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .sub-headding-container {
+    padding: 0 150px;
+  }
+
+  .sub-headding {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .speaker-intro-container .speaker-intro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding-left: 0px;
+  }
+
+  .speaker-intro .card:nth-child(3n + 1):last-child {
+    grid-column: 2;
+  }
+
+  .speaker-intro .card {
+    list-style: none;
+    border-width: 0;
+    max-width: 345px;
+  }
+
+  .speaker-intro .card:hover .name-bg {
+    color: #ffffff;
+    background-color: #ec7b53;
+  }
+
+  .card .img img {
+    height: "438px";
+    width: "438px";
+    object-fit: cover;
+  }
+
+  .name-bg {
+    font-family: "clash-display";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #262a41;
+    background-color: #ffffff;
+    padding: 5px;
+  }
+
+  .first-name::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .speaker-topic {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .img-name-wrapper {
+    position: relative;
+  }
+
+  .speaker-name {
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+  }
+  .speaker-topic-container {
+    margin-top: 15px;
+  }
+
+  .bottom-text span {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #1e2441;
+  }
+
+  .bottom-text a {
+    color: #ff7d4a;
+  }
+
+  .bottom-text > span:first-child {
+    color: #57c2f1;
+  }
+
+  @media screen and (max-width: 1050px) {
+    .speaker-intro-container .speaker-intro {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .speaker-intro-container .speaker-intro {
+      grid-template-columns: auto;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sub-headding-container {
+      padding: 8px 16px;
+    }
+  }
+</style>
+
+<main class="speaker-container">
+  <h3 class="heading">Speakers</h3>
+  <div class="sub-headding-container">
+    <p class="sub-headding">
+      The legendary SmashingConf SF 🇺🇸 is back — entirely focused on
+      cutting-edge front-end. From accessibility and advanced CSS to JavaScript
+      gems and web performance.
+    </p>
+  </div>
+
+  <div class="speaker-intro-container">
+    <ul class="speaker-intro">
+      <li class="card">
+        <div class="img-name-wrapper">
+          <div class="img">
+            <img src="/img/speakers/speaker.png" alt="speaker img" />
+          </div>
+          <div class="speaker-name">
+            <span class="first-name name-bg">Gaurav</span>
+            <span class="last-name name-bg">Bhai</span>
+          </div>
+        </div>
+        <div class="speaker-topic-container">
+          <p class="speaker-topic">
+            with topics ranging from GraphQL, WebAssembly, the JAMStack &
+            Progressive .
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="img-name-wrapper">
+          <div class="img">
+            <img src="/img/speakers/speaker.png" alt="speaker img" />
+          </div>
+          <div class="speaker-name">
+            <span class="first-name name-bg">Gaurav</span>
+            <span class="last-name name-bg">Bhai</span>
+          </div>
+        </div>
+        <div class="speaker-topic-container">
+          <p class="speaker-topic">
+            with topics ranging from GraphQL, WebAssembly, the JAMStack &
+            Progressive .
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="img-name-wrapper">
+          <div class="img">
+            <img src="/img/speakers/speaker.png" alt="speaker img" />
+          </div>
+          <div class="speaker-name">
+            <span class="first-name name-bg">Gaurav</span>
+            <span class="last-name name-bg">Bhai</span>
+          </div>
+        </div>
+        <div class="speaker-topic-container">
+          <p class="speaker-topic">
+            with topics ranging from GraphQL, WebAssembly, the JAMStack &
+            Progressive .
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="img-name-wrapper">
+          <div class="img">
+            <img src="/img/speakers/speaker.png" alt="speaker img" />
+          </div>
+          <div class="speaker-name">
+            <span class="first-name name-bg">Gaurav</span>
+            <span class="last-name name-bg">Bhai</span>
+          </div>
+        </div>
+        <div class="speaker-topic-container">
+          <p class="speaker-topic">
+            with topics ranging from GraphQL, WebAssembly, the JAMStack &
+            Progressive .
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="bottom-text">
+    <span>More to be announced…</span>
+    <span>
+      Missing your favourite speaker or want to speak? <a>Drop us a line</a>
+    </span>
+  </div>
+</main>
