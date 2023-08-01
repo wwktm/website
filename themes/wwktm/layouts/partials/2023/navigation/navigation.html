@@ -1,5 +1,11 @@
 <style>
+  .navbar-wrapper {
+    position: absolute;top: 0;
+    left: 0;
+    width: 100%;
+  }
   .navbar {
+    
     z-index: 100;
   }
 
@@ -14,34 +20,55 @@
     padding: 5px;
   }
 
+  .nav-link {
+    color: white;
+  }
+
   .nav-logo {
     width: 150px;
+    filter: brightness(0) invert(1);
+
   }
+
   .nav-brand {
     padding: 5px;
   }
 </style>
-
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="nav-brand">
-    <a href="/" class="nav-link"><img src="/img/logo.png" class="nav-logo" alt=""></a>
-  </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-navs mr-auto my-lg-0">
-  </ul>
-  <ul class="navbar-navs my-2 my-lg-0">
-    <li class="nav-items ">
-      <a class="nav-link" href="/2019/">2019 </a>
-    </li>
-    <li class="nav-items">
-      <a class="nav-link" href="/2018/">2018</a>
-    </li>
-    <li class="nav-items active">
-      <a class="nav-link" href="https://blog.wwktm.co">Blog <span class="sr-only">(current)</span></a>
-    </li>
-  </ul>
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="nav-brand">
+      <a href="/" class="nav-link"><img src="/img/logo.png" class="nav-logo" alt=""></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-navs mr-auto my-lg-0">
+      </ul>
+      <ul class="navbar-navs my-2 my-lg-0">
+        <li class="nav-items ">
+          <a class="nav-link" href="#speakers">Speakers </a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" href="#venue">Venue</a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" href="#sponsors">Sponsors</a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" href="#tickets">Buy Tickets</a>
+        </li>
+        <li class="nav-items ">
+          <a class="nav-link" href="/2019/">2019 </a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" href="/2018/">2018</a>
+        </li>
+        <li class="nav-items active">
+          <a class="nav-link" href="https://blog.wwktm.co">Blog <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>
-</nav>

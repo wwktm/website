@@ -34,18 +34,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/2023/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/2023/css/old-style.css" />
 
     {{ $style := resources.Get "scss/main-2020.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
-
-    <style>
-      body {
-        width: 100%;
-        box-sizing: border-box;
-        margin:0;
-      }
-    </style>
   </head>
 
-  <body>
+  <body></body>
+</html>
