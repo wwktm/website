@@ -1,4 +1,5 @@
-{{ partial "2023/common/head.html" . }} {{ partial "2023/navigation/navigation.html" .}}
+{{ partial "2023/common/head.html" . }} 
+
 <style>
     .container {
       max-width:1140px
@@ -17,11 +18,20 @@
       }
     } */
 
+    .nav-wrapper {
+      position: relative;
+    }
+
     .wrapper-body {
         padding: 5rem 0 0 0;
     }
-  </style>
-{{partial "2023/components/banner.html" }}
+</style>
+
+<div class="nav-wrapper">
+  {{ partial "2023/navigation/navigation.html" .}}
+  {{partial "2023/components/banner.html" }}
+</div>
+
 {{partial "2023/components/intro.html" }}
 {{partial "2023/components/speakers.html" }}
 {{ partial "2023/components/tickets.html" . }}
