@@ -23,11 +23,10 @@
   </style>
 {{partial "2023/components/banner.html" }}
 {{partial "2023/components/intro.html" }}
-
-<div class="wrapper-body">
-  {{ partial "2023/components/tickets.html" . }}
-  {{ partial "2023/components/location_and_newsletter.html" . }}
-</div>
+{{partial "2023/components/speakers.html" }}
+{{ partial "2023/components/tickets.html" . }}
+{{partial "2023/components/stats.html" }}
+{{ partial "2023/components/location_and_newsletter.html" . }}
 
 <!-- credits -->
 {{ partial "2023/common/foot.html" . }}
