@@ -38,6 +38,14 @@
 
     {{ $style := resources.Get "scss/main-2020.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+    <style>
+      body {
+        width: 100%;
+        box-sizing: border-box;
+        margin:0;
+      }
+    </style>
   </head>
 
   <body>
