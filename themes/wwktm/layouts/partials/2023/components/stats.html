@@ -30,6 +30,8 @@
     grid-row: span 2;
   }
 
+  
+
   .gird-span-3 {
     grid-column: span 3;
   }
@@ -60,24 +62,30 @@
 
   @media screen and (max-width: 600px) {
     .stats-container {
-      grid-template-columns: repeat(4, 25vw);
+      grid-template-columns: repeat(3, 33.33vw);
       grid-auto-rows: 25vw;
       margin: 0;
     }
     .hide {
       display: none !important;
     }
+    .bg-sm-blue {
+      background: #57c2f1;
+    }
     .swap-orange-blue {
       grid-column-start: 1;
       grid-row-start: 3;
     }
     .swap-blue-white {
-      grid-column-start: 4;
-      grid-row-start: 4;
+      grid-column-start: 1;
+      grid-row-start: 3;
     }
     .swap-white-orange {
-      grid-column-start: 3;
+      grid-column-start: 2;
       grid-row-start: 4;
+    }
+    .span-hiked {
+      grid-column: span 4;
     }
     .change-bg-light-blue {
       background: #eef8fd;
@@ -92,7 +100,7 @@
     }
 
     .text {
-      font-size: 16px;
+      font-size: 14px;
       letter-spacing: 0px;
     }
   }
@@ -131,14 +139,14 @@
     </p>
   </div>
   <div class="bg-white swap-white-orange"></div>
-  <div class="bg-orange">
+  <div class="bg-orange bg-sm-blue">
     <p>
       <span class="numbers">55+</span>
       <span class="text">COMPANIES</span>
     </p>
   </div>
-  <div class="bg-white"></div>
-  <div class="bg-orange gird-col-span-2 gird-row-span-2">
+  <div class="bg-white hide"></div>
+  <div class="bg-orange gird-col-span-2 gird-row-span-2 span-hiked">
     <p>
       <span class="numbers">1,731,840</span>
       <span class="text">STEPS HIKED</span>
@@ -152,7 +160,7 @@
     </p>
   </div>
   <div class="bg-white hide"></div>
-  <div class="bg-light-blue hide"></div>
+  <div class="bg-light-blue "></div>
   <div class="bg-white gird-col-span-2 hide"></div>
-  <div class="bg-light-blue hide"></div>
+  <div class="bg-light-blue "></div>
 </main>

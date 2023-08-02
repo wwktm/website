@@ -6,12 +6,31 @@
     /* height: fit-content; */
     align-items: center;
     display: flex;
+    overflow: hidden;
   }
 
   .banner-video {
     width: 100%;
+    height: 80vh;
+    z-index: 1; 
+  }
 
-    z-index: 1;
+  iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   @media screen and (max-width: 768px) {}
@@ -162,11 +181,24 @@
 </style>
 
 <div class="banner-wrapper">
-  <video autoplay class="banner-video" loop controls>
+  {{/*  <video autoplay class="banner-video" loop controls>
     <source src="D:/College Files/Major Project/Streaming/1.mp4" type="video/mp4">
     <source src="movie.ogg" type="video/ogg">
     Your browser does not support the video tag.
-  </video>
+  </video>  */}}
+  <div class="banner-video">
+  <div style="position: absolute; z-index: -99; width: 100%; height: 100%">
+    <iframe
+      frameborder="0"
+      {{/*  height="100%"
+      width="100%"  */}}
+      src="https://youtube.com/embed/aACy0eoDQwA?autoplay=1&loop=1&controls=0&showinfo=1&autohide=1&playsinline=1&mute=1"
+    >
+    </iframe>
+    <div class="banner-cover"></div>
+  </div>
+  
+</div>
 
   <div class="banner-text">
     <div class="date">
