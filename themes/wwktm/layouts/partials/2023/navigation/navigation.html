@@ -33,9 +33,21 @@
   .nav-brand {
     padding: 5px;
   }
+  @media screen and (max-width: 768px) {
+    .navbar-collapse {
+      background-color: #333333;
+      border-bottom: 1px solid #595858;
+
+    }
+
+    .navbar-collapse .nav-items {
+      display: block;
+      width: 100%;
+    }
+  }
 </style>
 <div class="navbar-wrapper">
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="nav-brand">
       <a href="/" class="nav-link"><img src="/img/logo.png" class="nav-logo" alt=""></a>
     </div>
