@@ -112,6 +112,15 @@
     text-align: left;
   }
 
+  .second-row {
+    margin-left: -180px;
+    transform: rotateY(180deg);
+  }
+
+  .second-row .testimonial-card {
+    transform: rotateY(-180deg);
+  }
+
   @media screen and (max-width: 600px) {
     .card-title-profile {
       flex-direction: column;
@@ -380,7 +389,7 @@
       variableWidth: true,
     };
 
-    $(".second-row").slick(settings);
+    $(".first-row,.second-row, .third-row").slick(settings);
   }
   document.addEventListener("DOMContentLoaded", function () {
     trustedSlider();
