@@ -1,12 +1,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
   <title>Document</title>
 </head>
 <style>
   .testimonial {
     background: #fef8f6;
     padding: 100px 0px 100px 0px;
+    overflow: hidden;
+    margin: 0px -8px;
   }
 
   .testimonial-title {
@@ -24,7 +31,8 @@
     flex-direction: column;
   }
 
-  .testimonial-row {
+  .testimonial-row,
+  .testimonial-row .slick-track {
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -123,10 +131,10 @@
   }
 </style>
 <main class="testimonial">
-  <div class="testimonial-title">
+  <section class="testimonial-title">
     <h3>Love from the community</h3>
-  </div>
-  <div class="testimonial-grid">
+  </section>
+  <section class="testimonial-grid">
     <div class="testimonial-row first-row">
       <div class="testimonial-card">
         <div class="card-title-profile">
@@ -343,5 +351,38 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </main>
+
+<script
+  type="text/javascript"
+  src="//code.jquery.com/jquery-1.11.0.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+
+<script>
+  function trustedSlider() {
+    const settings = {
+      speed: 15000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      cssEase: "linear",
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      variableWidth: true,
+    };
+
+    $(".second-row").slick(settings);
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    trustedSlider();
+  });
+</script>
