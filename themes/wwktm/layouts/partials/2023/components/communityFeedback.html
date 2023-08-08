@@ -1,0 +1,642 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <title>Document</title>
+</head>
+<style>
+  .testimonial {
+    background: #fef8f6;
+    padding: 100px 0px 100px 0px;
+    overflow: hidden;
+    margin: 0px -8px;
+  }
+
+  .testimonial-title {
+    font-family: Clash Display;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 66px;
+    text-align: center;
+    margin: 0px 0px 24px 0px;
+  }
+
+  .testimonial-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-row,
+  .testimonial-row .slick-track {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 16px;
+    overflow: visible;
+  }
+
+  .testimonial-card {
+    border-radius: 16px;
+    position: relative;
+    background-color: #fefefe;
+    max-width: 504px;
+    min-height: 188px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0px 4px 12px 0px #00000014;
+    flex-shrink: 0;
+  }
+
+  .img-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-title-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .profile-img {
+    background: #dbd1fc;
+
+    border-radius: 999px;
+  }
+
+  .card-title {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .card-content {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .card-designation {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-designation .name {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .card-designation .designation {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .second-row {
+    margin-left: -180px;
+    transform: rotateY(180deg);
+  }
+
+  .second-row .testimonial-card {
+    transform: rotateY(-180deg);
+  }
+
+  .testimonial-mobile {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .card-title-profile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .testimonial-card {
+      width: 325px;
+      height: 100%;
+      margin: auto 8px;
+    }
+
+    .card-designation {
+      position: static;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .card-designation > * {
+      margin: 0px;
+    }
+
+    .testimonial-row {
+      display: none;
+    }
+
+    .testimonial-mobile,
+    .testimonial-mobile .slick-track {
+      display: block;
+      padding-bottom: 16px;
+    }
+  }
+</style>
+<main class="testimonial">
+  <!-- <section class="testimonial-title"> -->
+  <h3 class="testimonial-title">Love from the community</h3>
+  <!-- </section> -->
+  <section class="testimonial-grid">
+    <div class="testimonial-row first-row">
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-row second-row">
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-row third-row">
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial for monile view -->
+    <div class="testimonial-mobile">
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="card-title-profile">
+          <div class="img-title-wrapper">
+            <div class="profile-img">
+              <img src="/img/memoji.png" alt="memoji" />
+            </div>
+            <div class="card-title">“The best time manager app”</div>
+          </div>
+          <div class="card-ratings">
+            <img src="/img/5star.png" alt="ratings" />
+          </div>
+        </div>
+        <div class="card-content">
+          This calendar app has been a lifesaver! I used to forget important
+          events, but now I'm always on top of my schedule.
+        </div>
+        <div class="card-designation">
+          <p class="name">Sophie Moore</p>
+          <p class="designation">Head of marketing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script
+  type="text/javascript"
+  src="//code.jquery.com/jquery-1.11.0.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+
+<script>
+  function tesimonialSlider() {
+    const settings = {
+      speed: 15000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      cssEase: "linear",
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      variableWidth: true,
+    };
+
+    $(".first-row,.second-row, .third-row").slick(settings);
+  }
+
+  function tesimonialSliderMobile() {
+    const settings = {
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      draggable: true,
+    };
+    $(".testimonial-mobile").slick(settings);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    tesimonialSlider(), tesimonialSliderMobile();
+  });
+</script>
