@@ -99,11 +99,56 @@
 
     .scrollbar-none { scrollbar-width: none; }
 
-    /* Timeline filtering: dim non-matching moments when hovering an event card */
-    #timeline li { transition: opacity .35s ease, filter .35s ease; }
-    #timeline.filtering li:not(.match) { opacity: .18; filter: blur(1px); }
+    /* Timeline filtering: squish non-matching moments so matches take the stage */
+    #timeline li { transition: opacity .35s ease, width .55s cubic-bezier(.22,1,.36,1); }
+    #timeline li > div { transition: opacity .3s ease; }
+    /* squished items become pure dots: text fades out instead of wrapping/clipping */
+    #timeline.filtering li:not(.match) { width: 4.5rem; opacity: .5; overflow: hidden; }
+    #timeline.filtering li:not(.match) > div { opacity: 0; pointer-events: none; }
     #timeline.filtering li.match > span:first-child { transform: translateY(-50%) scale(1.25); }
     #timeline li > span:first-child { transition: transform .35s ease; }
+
+    /* Mobile: timeline goes vertical, descriptions always visible */
+    @media (max-width: 767px) {
+      .tl-line {
+        left: 19px !important; right: auto !important;
+        top: 0 !important; bottom: 0 !important;
+        width: 1px; height: auto !important;
+        transform: none !important;
+        background: linear-gradient(to bottom, transparent, rgba(255,179,71,.5), transparent) !important;
+      }
+      #timeline {
+        flex-direction: column;
+        gap: 2.5rem;
+        overflow: visible;
+        align-items: stretch;
+        padding-left: 3rem !important;
+        padding-right: 1.5rem !important;
+      }
+      #timeline li { width: 100% !important; height: auto; }
+      /* dots sit on the left rail, clear of the viewport edge */
+      #timeline li > span:first-child,
+      #timeline li > span:first-child + span {
+        left: -2.25rem !important;
+        top: 0.3rem !important;
+        transform: none !important;
+      }
+      #timeline li > span:first-child + span { display: none; } /* hide connector ticks */
+      /* content flows normally: date, title, description */
+      #timeline li > div {
+        position: static !important;
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+      }
+      #timeline li > div > p.text-xs { order: 1; }
+      #timeline li > div > h3 { order: 2; }
+      #timeline li > div > p.text-sm { order: 3; margin-top: 0.375rem; margin-bottom: 0; }
+      /* descriptions visible (no hover on touch) */
+      #timeline li p[class*="opacity-0"] { opacity: 1 !important; transform: none !important; }
+      /* filtering on mobile: just dim, no squish */
+      #timeline.filtering li:not(.match) { width: 100%; overflow: visible; }
+    }
 
     .scrollbar-none::-webkit-scrollbar { display: none; }
 
@@ -156,7 +201,7 @@
 
     <div class="relative z-10 max-w-3xl mx-auto px-6 pt-32 pb-20 text-center">
       <!-- Self-drawing W, revived from wwktm.com/2019 -->
-      <svg id="w-anim" viewBox="0 0 650 400" class="mx-auto w-40 md:w-52 h-auto drop-shadow-[0_0_40px_rgba(255,125,74,0.25)]" role="img" aria-label="Web Weekend Kathmandu">
+      <svg id="w-anim" viewBox="0 0 650 400" class="mx-auto w-40 md:w-52 h-auto" role="img" aria-label="Web Weekend Kathmandu">
         <defs>
           <path id="w-sides-path" d="M388.586957,1.07883798 L633.396739,1.07883798 C635.48913,1.07883798 637.581522,1.67669403 639.375,2.57347811 C645.054348,5.86168638 647.146739,13.035959 643.858696,18.7155914 L518.61413,235.438409 L388.586957,1.07883798 Z M172.472826,1.07883798 L310.271739,249.488026 C310.271739,249.488026 230.163043,388.19063 228.369565,391.17991 C227.472826,392.67455 225.380435,395.065974 223.586957,395.962758 C221.793478,396.859542 219.701087,397.457398 217.907609,397.457398 C217.608696,397.457398 217.01087,397.457398 216.711957,397.457398 C213.125,397.15847 209.836957,394.767046 208.043478,391.478838 L1.49456522,18.7155914 C0.597826087,16.9220233 0,15.1284551 0,13.035959 C0,6.45954242 5.38043478,1.07883798 11.9565217,1.07883798 L172.472826,1.07883798 Z"/>
           <path id="w-middle-path" d="M0,1.07883798 L178.75,1.07883798 L317.744565,251.879451 L237.336957,391.478838 C236.141304,393.272406 234.347826,395.364902 232.554348,396.261686 C226.875,399.549895 219.402174,397.15847 216.413043,391.17991 L0,1.07883798 Z"/>
@@ -265,8 +310,8 @@
 
     <div class="mt-16 relative">
       <!-- The glowing river the moments float along -->
-      <div class="absolute left-0 right-0 top-1/2 -translate-y-px h-px bg-gradient-to-r from-transparent via-amber/50 to-transparent" aria-hidden="true"></div>
-      <div class="absolute left-0 right-0 top-1/2 -translate-y-[3px] h-[5px] bg-gradient-to-r from-transparent via-ember/30 to-transparent blur-sm" aria-hidden="true"></div>
+      <div class="tl-line absolute left-0 right-0 top-1/2 -translate-y-px h-px bg-gradient-to-r from-transparent via-amber/50 to-transparent" aria-hidden="true"></div>
+      <div class="tl-line absolute left-0 right-0 top-1/2 -translate-y-[3px] h-[5px] bg-gradient-to-r from-transparent via-ember/30 to-transparent blur-sm" aria-hidden="true"></div>
 
       <ol id="timeline" class="flex gap-12 overflow-x-auto px-[max(1.5rem,calc(50vw-36rem))] py-4 snap-x snap-mandatory scrollbar-none">
         <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="wwktm">
