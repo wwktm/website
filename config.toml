@@ -9,3 +9,6 @@ theme = "wwktm"
 
 [markup.goldmark.renderer]
     unsafe= true
+# Modern Hugo blocks HTML content files by default; the 2018/2019 sections rely on them
+[security]
+  allowContent = ['.*']
