@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.164.0">
+	<meta name="generator" content="Hugo 0.165.0">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Web Weekend Kathmandu (wwktm) - Nepal's Web &amp; Tech Community</title>
@@ -101,10 +101,55 @@
     .scrollbar-none { scrollbar-width: none; }
 
      
-    #timeline li { transition: opacity .35s ease, filter .35s ease; }
-    #timeline.filtering li:not(.match) { opacity: .18; filter: blur(1px); }
+    #timeline li { transition: opacity .35s ease, width .55s cubic-bezier(.22,1,.36,1); }
+    #timeline li > div { transition: opacity .3s ease; }
+     
+    #timeline.filtering li:not(.match) { width: 4.5rem; opacity: .5; overflow: hidden; }
+    #timeline.filtering li:not(.match) > div { opacity: 0; pointer-events: none; }
     #timeline.filtering li.match > span:first-child { transform: translateY(-50%) scale(1.25); }
     #timeline li > span:first-child { transition: transform .35s ease; }
+
+     
+    @media (max-width: 767px) {
+      .tl-line {
+        left: 19px !important; right: auto !important;
+        top: 0 !important; bottom: 0 !important;
+        width: 1px; height: auto !important;
+        transform: none !important;
+        background: linear-gradient(to bottom, transparent, rgba(255,179,71,.5), transparent) !important;
+      }
+      #timeline {
+        flex-direction: column;
+        gap: 2.5rem;
+        overflow: visible;
+        align-items: stretch;
+        padding-left: 3rem !important;
+        padding-right: 1.5rem !important;
+      }
+      #timeline li { width: 100% !important; height: auto; }
+       
+      #timeline li > span:first-child,
+      #timeline li > span:first-child + span {
+        left: -2.25rem !important;
+        top: 0.3rem !important;
+        transform: none !important;
+      }
+      #timeline li > span:first-child + span { display: none; }  
+       
+      #timeline li > div {
+        position: static !important;
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+      }
+      #timeline li > div > p.text-xs { order: 1; }
+      #timeline li > div > h3 { order: 2; }
+      #timeline li > div > p.text-sm { order: 3; margin-top: 0.375rem; margin-bottom: 0; }
+       
+      #timeline li p[class*="opacity-0"] { opacity: 1 !important; transform: none !important; }
+       
+      #timeline.filtering li:not(.match) { width: 100%; overflow: visible; }
+    }
 
     .scrollbar-none::-webkit-scrollbar { display: none; }
 
@@ -157,7 +202,7 @@
 
     <div class="relative z-10 max-w-3xl mx-auto px-6 pt-32 pb-20 text-center">
       
-      <svg id="w-anim" viewBox="0 0 650 400" class="mx-auto w-40 md:w-52 h-auto drop-shadow-[0_0_40px_rgba(255,125,74,0.25)]" role="img" aria-label="Web Weekend Kathmandu">
+      <svg id="w-anim" viewBox="0 0 650 400" class="mx-auto w-40 md:w-52 h-auto" role="img" aria-label="Web Weekend Kathmandu">
         <defs>
           <path id="w-sides-path" d="M388.586957,1.07883798 L633.396739,1.07883798 C635.48913,1.07883798 637.581522,1.67669403 639.375,2.57347811 C645.054348,5.86168638 647.146739,13.035959 643.858696,18.7155914 L518.61413,235.438409 L388.586957,1.07883798 Z M172.472826,1.07883798 L310.271739,249.488026 C310.271739,249.488026 230.163043,388.19063 228.369565,391.17991 C227.472826,392.67455 225.380435,395.065974 223.586957,395.962758 C221.793478,396.859542 219.701087,397.457398 217.907609,397.457398 C217.608696,397.457398 217.01087,397.457398 216.711957,397.457398 C213.125,397.15847 209.836957,394.767046 208.043478,391.478838 L1.49456522,18.7155914 C0.597826087,16.9220233 0,15.1284551 0,13.035959 C0,6.45954242 5.38043478,1.07883798 11.9565217,1.07883798 L172.472826,1.07883798 Z"/>
           <path id="w-middle-path" d="M0,1.07883798 L178.75,1.07883798 L317.744565,251.879451 L237.336957,391.478838 C236.141304,393.272406 234.347826,395.364902 232.554348,396.261686 C226.875,399.549895 219.402174,397.15847 216.413043,391.17991 L0,1.07883798 Z"/>
@@ -177,13 +222,9 @@
       
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
         <span class="text-xs font-medium tracking-widest uppercase text-white/40">Next up</span>
-        <a href="https://barcamp.wwktm.com/" target="_blank" rel="noopener" class="glass rounded-full px-5 py-2.5 text-sm text-white/80 hover:text-white hover:border-amber/40 transition inline-flex items-center gap-2">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber animate-pulse" aria-hidden="true"></span>
-          BarCamp Kathmandu 2026 <span class="text-white/40">&middot; 15 Aug 2026</span>
-        </a>
         <a href="https://aiconf.asia/" target="_blank" rel="noopener" class="glass rounded-full px-5 py-2.5 text-sm text-white/80 hover:text-white hover:border-amber/40 transition inline-flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full bg-amber animate-pulse" aria-hidden="true"></span>
-          AI Conf 2027 <span class="text-white/40">&middot; 9 Jan 2027</span>
+          AI Conf Asia 2027 <span class="text-white/40">&middot; 9 Jan 2027</span>
         </a>
       </div>
     </div>
@@ -200,7 +241,7 @@
 
       
       <a href="https://aiconf.asia/" target="_blank" rel="noopener" data-filter="aiconf" class="card glass rounded-2xl p-7 flex flex-col group">
-        <div class="h-32 flex items-center">
+        <div class="h-24 flex items-center">
           <img src="/aiconf.svg" alt="AI Conf" class="h-12 w-auto">
         </div>
         <p class="mt-5 text-xs font-medium tracking-widest uppercase text-white/50">Annual conference &middot; January</p>
@@ -216,8 +257,8 @@
 
       
       <a href="https://barcamp.wwktm.com/" target="_blank" rel="noopener" data-filter="barcamp" class="card glass rounded-2xl p-7 flex flex-col group">
-        <div class="h-32 flex items-center">
-          <img src="/barcamp.svg" alt="BarCamp Kathmandu" class="h-32 w-auto max-w-none">
+        <div class="h-24 flex items-center">
+          <img src="/barcamp.svg" alt="BarCamp Kathmandu" class="h-24 w-auto max-w-none">
         </div>
         <p class="mt-5 text-xs font-medium tracking-widest uppercase text-white/50">Annual unconference &middot; Summer</p>
         <p class="mt-2 text-sm leading-relaxed text-white/60 flex-1">
@@ -232,7 +273,7 @@
 
       
       <a href="https://luma.com/wwktm?period=past" target="_blank" rel="noopener" data-filter="tkk" class="card glass rounded-2xl p-7 flex flex-col group">
-        <div class="h-32 flex items-center">
+        <div class="h-24 flex items-center">
           <img src="/TKK.svg" alt="Tech Kura Kani" class="h-16 w-auto">
         </div>
         <p class="mt-5 text-xs font-medium tracking-widest uppercase text-white/50">Monthly meetup &middot; Last Thursday</p>
@@ -266,11 +307,11 @@
 
     <div class="mt-16 relative">
       
-      <div class="absolute left-0 right-0 top-1/2 -translate-y-px h-px bg-gradient-to-r from-transparent via-amber/50 to-transparent" aria-hidden="true"></div>
-      <div class="absolute left-0 right-0 top-1/2 -translate-y-[3px] h-[5px] bg-gradient-to-r from-transparent via-ember/30 to-transparent blur-sm" aria-hidden="true"></div>
+      <div class="tl-line absolute left-0 right-0 top-1/2 -translate-y-px h-px bg-gradient-to-r from-transparent via-amber/50 to-transparent" aria-hidden="true"></div>
+      <div class="tl-line absolute left-0 right-0 top-1/2 -translate-y-[3px] h-[5px] bg-gradient-to-r from-transparent via-ember/30 to-transparent blur-sm" aria-hidden="true"></div>
 
       <ol id="timeline" class="flex gap-12 overflow-x-auto px-[max(1.5rem,calc(50vw-36rem))] py-4 snap-x snap-mandatory scrollbar-none">
-        <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="wwktm">
+        <li class="snap-center shrink-0 w-64 h-96 relative group" data-event="wwktm">
           <span class="absolute top-1/2 -translate-y-1/2 left-0 w-[15px] h-[15px] rounded-full bg-gradient-to-br from-ember to-amber shadow-[0_0_18px_rgba(255,140,60,0.8)]" aria-hidden="true"></span>
           <span class="absolute top-1/2 left-[7px] w-px h-8 -translate-y-full bg-gradient-to-t from-amber/40 to-transparent" aria-hidden="true"></span>
           <div class="absolute bottom-1/2 mb-10 left-0 right-0">
@@ -279,7 +320,7 @@
             <h3 class="mt-1.5 font-display text-lg font-semibold"><a href="https://wwktm.com/2018/" target="_blank" rel="noopener" class="hover:text-amber transition">Web Weekend Kathmandu 2018</a></h3>
           </div>
         </li>
-        <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="wwktm">
+        <li class="snap-center shrink-0 w-64 h-96 relative group" data-event="wwktm">
           <span class="absolute top-1/2 -translate-y-1/2 left-0 w-[15px] h-[15px] rounded-full bg-gradient-to-br from-ember to-amber shadow-[0_0_18px_rgba(255,140,60,0.8)]" aria-hidden="true"></span>
           <span class="absolute top-1/2 left-[7px] w-px h-8 bg-gradient-to-b from-amber/40 to-transparent" aria-hidden="true"></span>
           <div class="absolute top-1/2 mt-10 left-0 right-0">
@@ -288,7 +329,7 @@
             <p class="mt-1.5 text-sm text-white/60 leading-relaxed opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300">The second edition, bigger and louder - two days of web, design, and community.</p>
           </div>
         </li>
-        <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="tkk">
+        <li class="snap-center shrink-0 w-64 h-96 relative group" data-event="tkk">
           <span class="absolute top-1/2 -translate-y-1/2 left-0 w-[15px] h-[15px] rounded-full bg-gradient-to-br from-ember to-amber shadow-[0_0_18px_rgba(255,140,60,0.8)]" aria-hidden="true"></span>
           <span class="absolute top-1/2 left-[7px] w-px h-8 -translate-y-full bg-gradient-to-t from-amber/40 to-transparent" aria-hidden="true"></span>
           <div class="absolute bottom-1/2 mb-10 left-0 right-0">
@@ -297,7 +338,7 @@
             <h3 class="mt-1.5 font-display text-lg font-semibold">First Tech Kura Kani</h3>
           </div>
         </li>
-        <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="barcamp">
+        <li class="snap-center shrink-0 w-64 h-96 relative group" data-event="barcamp">
           <span class="absolute top-1/2 -translate-y-1/2 left-0 w-[15px] h-[15px] rounded-full bg-gradient-to-br from-ember to-amber shadow-[0_0_18px_rgba(255,140,60,0.8)]" aria-hidden="true"></span>
           <span class="absolute top-1/2 left-[7px] w-px h-8 bg-gradient-to-b from-amber/40 to-transparent" aria-hidden="true"></span>
           <div class="absolute top-1/2 mt-10 left-0 right-0">
@@ -306,7 +347,7 @@
             <p class="mt-1.5 text-sm text-white/60 leading-relaxed opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300">The unconference returns to Kathmandu - the agenda built by attendees, for attendees.</p>
           </div>
         </li>
-        <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="barcamp">
+        <li class="snap-center shrink-0 w-64 h-96 relative group" data-event="barcamp">
           <span class="absolute top-1/2 -translate-y-1/2 left-0 w-[15px] h-[15px] rounded-full bg-gradient-to-br from-ember to-amber shadow-[0_0_18px_rgba(255,140,60,0.8)]" aria-hidden="true"></span>
           <span class="absolute top-1/2 left-[7px] w-px h-8 -translate-y-full bg-gradient-to-t from-amber/40 to-transparent" aria-hidden="true"></span>
           <div class="absolute bottom-1/2 mb-10 left-0 right-0">
@@ -315,7 +356,7 @@
             <h3 class="mt-1.5 font-display text-lg font-semibold"><a href="https://barcamp.wwktm.com/ktm/2025" target="_blank" rel="noopener" class="hover:text-amber transition">BarCamp Kathmandu 2025</a></h3>
           </div>
         </li>
-        <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="aiconf">
+        <li class="snap-center shrink-0 w-64 h-96 relative group" data-event="aiconf">
           <span class="absolute top-1/2 -translate-y-1/2 left-0 w-[15px] h-[15px] rounded-full bg-gradient-to-br from-ember to-amber shadow-[0_0_18px_rgba(255,140,60,0.8)]" aria-hidden="true"></span>
           <span class="absolute top-1/2 left-[7px] w-px h-8 bg-gradient-to-b from-amber/40 to-transparent" aria-hidden="true"></span>
           <div class="absolute top-1/2 mt-10 left-0 right-0">
@@ -324,19 +365,16 @@
             <p class="mt-1.5 text-sm text-white/60 leading-relaxed opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300">A new flagship is born - two days of AI in action, plus the first community hike.</p>
           </div>
         </li>
-        <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="barcamp">
-          <span class="absolute top-1/2 -translate-y-1/2 left-0 flex" aria-hidden="true">
-            <span class="absolute inline-flex w-[15px] h-[15px] rounded-full bg-amber opacity-60 animate-ping"></span>
-            <span class="relative inline-flex w-[15px] h-[15px] rounded-full bg-gradient-to-br from-amber to-ember shadow-[0_0_22px_rgba(255,179,71,1)] transition-transform duration-300 group-hover:scale-125"></span>
-          </span>
+        <li class="snap-center shrink-0 w-64 h-96 relative group" data-event="barcamp">
+          <span class="absolute top-1/2 -translate-y-1/2 left-0 w-[15px] h-[15px] rounded-full bg-gradient-to-br from-ember to-amber shadow-[0_0_18px_rgba(255,140,60,0.8)]" aria-hidden="true"></span>
           <span class="absolute top-1/2 left-[7px] w-px h-8 -translate-y-full bg-gradient-to-t from-amber/40 to-transparent" aria-hidden="true"></span>
           <div class="absolute bottom-1/2 mb-10 left-0 right-0">
             <p class="mb-1.5 text-sm text-white/60 leading-relaxed opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300">The unconference returns - the session board built by attendees, for attendees.</p>
-            <p class="text-xs font-medium tracking-widest uppercase text-amber">15 August 2026 &middot; Upcoming</p>
+            <p class="text-xs font-medium tracking-widest uppercase text-white/50">15 August 2026</p>
             <h3 class="mt-1.5 font-display text-lg font-semibold"><a href="https://barcamp.wwktm.com/" target="_blank" rel="noopener" class="hover:text-amber transition">BarCamp Kathmandu 2026</a></h3>
           </div>
         </li>
-        <li class="snap-center shrink-0 w-64 h-80 relative group" data-event="aiconf">
+        <li class="snap-center shrink-0 w-64 h-96 relative group" data-event="aiconf">
           <span class="absolute top-1/2 -translate-y-1/2 left-0 flex" aria-hidden="true">
             <span class="absolute inline-flex w-[15px] h-[15px] rounded-full bg-amber opacity-60 animate-ping"></span>
             <span class="relative inline-flex w-[15px] h-[15px] rounded-full bg-gradient-to-br from-amber to-ember shadow-[0_0_22px_rgba(255,179,71,1)] transition-transform duration-300 group-hover:scale-125"></span>
@@ -344,7 +382,7 @@
           <span class="absolute top-1/2 left-[7px] w-px h-8 bg-gradient-to-b from-amber/40 to-transparent" aria-hidden="true"></span>
           <div class="absolute top-1/2 mt-10 left-0 right-0">
             <p class="text-xs font-medium tracking-widest uppercase text-amber">9 January 2027 &middot; Upcoming</p>
-            <h3 class="mt-1.5 font-display text-lg font-semibold"><a href="https://aiconf.asia/" target="_blank" rel="noopener" class="hover:text-amber transition">AI Conf 2027</a></h3>
+            <h3 class="mt-1.5 font-display text-lg font-semibold"><a href="https://aiconf.asia/" target="_blank" rel="noopener" class="hover:text-amber transition">AI Conf Asia 2027</a></h3>
             <p class="mt-1.5 text-sm text-white/60 leading-relaxed opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300">The next chapter - Asia&rsquo;s AI community gathers in the Himalayas.</p>
           </div>
         </li>
@@ -425,5 +463,6 @@
       });
     })();
   </script>
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "290c254fe2594e1196fa491d6ecbdfd1"}'></script>
 </body>
 </html>
